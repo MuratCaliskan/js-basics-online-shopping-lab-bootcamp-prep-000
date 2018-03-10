@@ -61,5 +61,10 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-    console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
+    console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`);
+    for (var i = cart.length; i >= 0; i--) {
+      return cart;
+    } else {
+      console.log("Sorry, we don't have a credit card on file for you.")
+    }
 }
